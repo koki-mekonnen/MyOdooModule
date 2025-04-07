@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="odoo__freelance.list">
+      <field name="name">Odoo_Freelance list</field>
+      <field name="model">odoo__freelance.odoo__freelance</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="odoo__freelance.action_window">
+      <field name="name">Odoo_Freelance window</field>
+      <field name="res_model">odoo__freelance.odoo__freelance</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="odoo__freelance.action_server">
+      <field name="name">Odoo_Freelance server</field>
+      <field name="model_id" ref="model_odoo__freelance_odoo__freelance"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="Odoo_Freelance" id="odoo__freelance.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="odoo__freelance.menu_1" parent="odoo__freelance.menu_root"/>
+    <menuitem name="Menu 2" id="odoo__freelance.menu_2" parent="odoo__freelance.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="odoo__freelance.menu_1_list" parent="odoo__freelance.menu_1"
+              action="odoo__freelance.action_window"/>
+    <menuitem name="Server to list" id="odoo__freelance" parent="odoo__freelance.menu_2"
+              action="odoo__freelance.action_server"/>
+-->
+  </data>
+</odoo>
