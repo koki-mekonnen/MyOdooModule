@@ -44,6 +44,8 @@ C:\odoo 18.0.20250330\server\odoo\addons\
 👋 Contribution
 
 PRs are welcome! Feel free to fork this module and enhance it.
+
+
 📄 License
 
 MIT License
