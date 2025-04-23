@@ -1,0 +1,40 @@
+<odoo>
+  <record id="view_bid_form" model="ir.ui.view">
+    <field name="name">freelance.bid.form</field>
+    <field name="model">freelance.bid</field>
+    <field name="arch" type="xml">
+      <form string="Bid">
+        <sheet>
+          <group>
+            <field name="project_id"/>
+            <field name="freelancer_id"/>
+            <field name="proposed_price"/>
+            <field name="currency_id"/>
+            <field name="proposal"/>
+            <field name="is_accepted"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_bid_tree" model="ir.ui.view">
+    <field name="name">freelance.bid.tree</field>
+    <field name="model">freelance.bid</field>
+    <field name="arch" type="xml">
+      <list>
+        <field name="project_id"/>
+        <field name="freelancer_id"/>
+        <field name="proposed_price"/>
+         <field name="currency_id"/>
+        <field name="is_accepted"/>
+      </list>
+    </field>
+  </record>
+
+  <record id="action_bid" model="ir.actions.act_window">
+    <field name="name">Bids</field>
+    <field name="res_model">freelance.bid</field>
+    <field name="view_mode">list,form</field>
+  </record>
+</odoo>

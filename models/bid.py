@@ -6,8 +6,8 @@ class FreelanceBid(models.Model):
     _description = 'Freelance Bid'
 
     project_id = fields.Many2one('freelance.project', required=True)
-    freelancer_id = fields.Many2one('res.partner', domain="[('is_freelancer','=',True)]", required=True)
+    freelancer_id = fields.Many2one('freelancer.freelancer', domain="[('is_freelancer','=',True)]", required=True)
     proposed_price = fields.Monetary()
-    currency_id = fields.Many2one('res.currency', related='project_id.currency_id', store=True)
+    currency_id = fields.Many2one('res.currency', string="Currency", required=True)
     proposal = fields.Text()
     is_accepted = fields.Boolean(default=False)

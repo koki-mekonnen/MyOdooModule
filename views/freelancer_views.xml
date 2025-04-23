@@ -1,0 +1,42 @@
+<odoo>
+  <record id="view_freelancer_form" model="ir.ui.view">
+    <field name="name">freelancer.form</field>
+    <field name="model">freelancer.freelancer</field>
+    <field name="arch" type="xml">
+      <form string="Freelancer" create="1" edit="1">
+        <sheet>
+          <group>
+            <field name="name"/>
+            <field name="age"/>
+            <field name="title"/>
+            <field name="is_freelancer"/>
+            <field name="skills"/>
+            <field name="rating"/>
+            <field name="completed_projects"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_freelancer_tree" model="ir.ui.view">
+    <field name="name">freelancer.tree</field>
+    <field name="model">freelancer.freelancer</field>
+    <field name="arch" type="xml">
+      <list string="Freelancers">
+        <field name="name"/>
+          <field name="age"/>
+            <field name="title"/>
+        <field name="skills"/>
+        <field name="rating"/>
+      </list>
+    </field>
+  </record>
+
+  <record id="action_freelancer" model="ir.actions.act_window">
+    <field name="name">Freelancers</field>
+    <field name="res_model">freelancer.freelancer</field>
+    <field name="view_mode">list,form</field>
+    <field name="domain">[('is_freelancer','=',True)]</field>
+  </record>
+</odoo>

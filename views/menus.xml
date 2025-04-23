@@ -1,0 +1,8 @@
+<odoo>
+  <menuitem id="freelance_marketplace_root" name="Freelance Marketplace" sequence="10"/>
+  <menuitem id="menu_freelancers" name="Freelancers" parent="freelance_marketplace_root" action="action_freelancer"/>
+  <menuitem id="menu_clients" name="Clients" parent="freelance_marketplace_root" action="action_client"/>
+  <menuitem id="menu_projects" name="Projects" parent="freelance_marketplace_root" action="action_project"/>
+  <menuitem id="menu_bids" name="Bids" parent="freelance_marketplace_root" action="action_bid"/>
+  <menuitem id="menu_contracts" name="Contracts" parent="freelance_marketplace_root" action="action_contract"/>
+</odoo>

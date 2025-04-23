@@ -1,0 +1,40 @@
+<odoo>
+  <record id="view_client_form" model="ir.ui.view">
+    <field name="name">client.form</field>
+    <field name="model">freelancer.client</field>
+    <field name="arch" type="xml">
+      <form string="Client" create="1" edit="1">
+        <sheet>
+          <group>
+            <field name="name"/>
+            <field name="company_name"/>
+            <field name="_is_client"/>
+            <field name="total_spent"/>
+            <field name="currency_id"/>
+          </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+
+  <record id="view_client_tree" model="ir.ui.view">
+    <field name="name">client.tree</field>
+    <field name="model">freelancer.client</field>
+    <field name="arch" type="xml">
+      <list string="Clients">
+        <field name="name"/>
+        <field name="company_name"/>
+        <field name="_is_client"/>
+        <field name="total_spent"/>
+        <field name="currency_id"/>
+      </list>
+    </field>
+  </record>
+
+  <record id="action_client" model="ir.actions.act_window">
+    <field name="name">Clients</field>
+    <field name="res_model">freelancer.client</field>
+    <field name="view_mode">list,form</field>
+    <field name="domain">[('_is_client','=',True)]</field>
+  </record>
+</odoo>

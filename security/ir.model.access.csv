@@ -1,6 +1,6 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_freelancer_user,freelancer.user,model_res_partner,,1,1,1,1
-access_client_user,client.user,model_res_partner,,1,1,1,1
+access_freelancer_user,freelancer.user,model_freelancer_freelancer,,1,1,1,1
+access_client_user,client.user,model_freelancer_client,,1,1,1,1
 access_project_user,freelance.project.user,model_freelance_project,,1,1,1,1
 access_bid_user,freelance.bid.user,model_freelance_bid,,1,1,1,1
 access_contract_user,freelance.contract.user,model_freelance_contract,,1,1,1,1
