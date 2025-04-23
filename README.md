@@ -49,6 +49,7 @@ PRs are welcome! Feel free to fork this module and enhance it.
 📄 License
 
 MIT License
+
 💡 Contact
 
 For support or questions, reach out via GitHub Issues or contact https://github.com/koki-mekonnen.
